@@ -111,11 +111,8 @@ const showPopUp = () => {
 // return: None
 // def: gets a random words from a web hosted json and stores it into a wordToGuess
 const getTheRandomWord = async () => {
-    fetch("https://api.jsonbin.io/b/61fb0f654ce71361b8cbe6a9", {
-        method: 'GET',
-        headers: {
-            'secret-key': '$2b$10$OZQX2A6UvI1NAT6cPdaXmeMNKTgNrufSRaGwQTr7JCn9Od/DeAIjq',
-        }
+    fetch("https://api.jsonbin.io/b/62019fa769b72261be53fc13", {
+        method: 'GET'
     }).then((res) => {
         res.json().then((data) => {
             wordToGuess = data.words[Math.floor(Math.random() * 277)].toUpperCase();
@@ -295,8 +292,8 @@ const addWord = (input) => {
         userInput.value = "";
         return;
     }
-    disableInputs(); //L.173
-    generateOccurences(); //L.276
+    disableInputs(); //L.170
+    generateOccurences(); //L.273
     const wordBoxes = document.querySelectorAll(".word-box");
     wordBoxes.forEach((word) => {
         if(word.dataset.index == gameIndex){
@@ -322,7 +319,7 @@ const addWord = (input) => {
                     if(colors[index]) wordArray[index].classList.add(colors[index]);
                     if(!(wordToGuess.includes(input[index])) && !(wrongLetters.includes(input[index]))){
                         wrongLetters.push(input[index]);
-                        addBadLetter(input[index]); //L.262
+                        addBadLetter(input[index]); //L.259
                     }
                 }, index*500);
             }
@@ -332,8 +329,8 @@ const addWord = (input) => {
     gameIndex++;
     setTimeout(() => {
         colors = [];
-        isFinished(input); //L.153
-        enableInputs(); //L.186
+        isFinished(input); //L.150
+        enableInputs(); //L.183
     }, 3032);
 }
 
@@ -343,12 +340,12 @@ const addWord = (input) => {
 //----------------------------------------------------------------------------THE APP METHOD-----------------------------------------------------------------------------------
 
 const mainApp = () => {
-    loadingPage(); //L.240
+    loadingPage(); //L.237
 
     if(gameLoop){
         getTheRandomWord(); //L.113
         setTimeout(() => {
-            firstLoad(); //L.133
+            firstLoad(); //L.130
         }, 3000);
     } else {
         if (isWin){
@@ -360,7 +357,7 @@ const mainApp = () => {
             </div>
             <button id="reset-button">Recommencer</div>
             `;
-            document.getElementById("reset-button").addEventListener("click", winReset); //winReset() L.200
+            document.getElementById("reset-button").addEventListener("click", winReset); //winReset() L.197
         } else {
             inputBox.style.visibility = "hidden";
             wrongBox.style.visibility = "hidden";
@@ -370,7 +367,7 @@ const mainApp = () => {
             </div>
             <button id="reset-button">Recommencer</div>
             `;
-            document.getElementById("reset-button").addEventListener("click", lossReset); //winReset() L.220
+            document.getElementById("reset-button").addEventListener("click", lossReset); //winReset() L.217
         }
     }
 }
