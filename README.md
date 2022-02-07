@@ -35,6 +35,6 @@ Vous aurez juste besoin de n'importe quel navigateur récent et de votre cerveau
 Je reste le plus clair de mon temps sur **Discord** : Idotcom#2197  
 Si vous voulez checker mon **Github** : [gtf974](https://github.com/gtf974)  
 
-
-<sub><sup>__Si vous ouvrez l'outil de développeur de votre navigateur (**F12** ou **CTRL+MAJ+I**),__  
-__puis allez dans l'onglet console, vous trouverez peut-être des petits trucs... 🐰__</sup></sub>
+<br>
+<br>
+<sub><sup>__Si vous ouvrez l'outil de développeur de votre navigateur (**F12** ou **CTRL+MAJ+I**),__  puis allez dans l'onglet console, vous trouverez peut-être des petits trucs... 🐰__</sup></sub>
