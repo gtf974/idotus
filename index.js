@@ -373,4 +373,3 @@ const mainApp = () => {
 }
 
 mainApp(); //This is where all begins. :)
-
