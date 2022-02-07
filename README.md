@@ -23,10 +23,10 @@ _(Pour ce cas précis, vous aurez un rappel des lettres non présentes dans le m
 Il s'agit d'un petit projet d'un autodidacte, ne vous attendez pas à du code ultra robuste et à un résultat très beau.  
 Ça doit être bien rempli de bugs.  
 (Ce n'est même pas responsive 👀)  
-Le jeu est entièrement codé en [Javascript Vanilla](https://developer.mozilla.org/fr/docs/Web/JavaScript).  
-Les mots sont choisis aléatoirement parmi une liste de mots hébergée sur [JSONBin.io](https://jsonbin.io/).  
+Le jeu est entièrement codé en [Javascript Vanilla](https://developer.mozilla.org/fr/docs/Web/JavaScript)  
+Les mots sont choisis aléatoirement parmi une liste de mots hébergée sur [JSONBin.io](https://jsonbin.io/)  
 
-**Merci à [Nmondon](https://github.com/nmondon) à qui j'ai emprunté la liste de mots fréquents via son Github [Mots fréquents de la langue française](https://github.com/nmondon/mots-frequents).**
+**Merci à [Nmondon](https://github.com/nmondon) à qui j'ai emprunté la liste de mots fréquents via son Github [Mots fréquents de la langue française](https://github.com/nmondon/mots-frequents)**
 
 ## Prérequis
 Vous aurez juste besoin de n'importe quel navigateur récent et de votre cerveau. 🧠
