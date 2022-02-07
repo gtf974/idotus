@@ -37,4 +37,4 @@ Si vous voulez checker mon **Github** : [gtf974](https://github.com/gtf974)
 
 <br>
 <br>
-<sub><sup>__Si vous ouvrez l'outil de développeur de votre navigateur (**F12** ou **CTRL+MAJ+I**),__  puis allez dans l'onglet console, vous trouverez peut-être des petits trucs... 🐰__</sup></sub>
+<sub><sup>Si vous ouvrez l'outil de développeur de votre navigateur (F12 ou CTRL+MAJ+I), puis allez dans l'onglet console, vous trouverez peut-être des petits trucs... 🐰</sup></sub>
