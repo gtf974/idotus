@@ -13,11 +13,11 @@ Il vous sera donné la première lettre d'un mot en 6 lettres. Le but étant de 
 Vous devez faire votre proposition à l'aide de la case dans laquelle vous pouvez entrer du texte.  
 Pour valider votre réponse, appuyez sur **Entrée** ou cliquez sur le bouton bleu avec un avion en papier.  
 
-**La validation vous donnera des indications sur le mot à trouver:**
+**La validation vous donnera des indications sur le mot à trouver:**  
 🟥 : signifie que la lettre est bien placée  
 🟨 : signifie que la lettre est dans le mot mais vous ne l'avez pas bien placée  
-_Si la couleur de la case ne change, cela veut tout simplement dire que la lettre n'est pas dans le mot à trouver._  
-_(Dans ce cas précis, vous aurez un rappel des lettres non présentes dans le mot que vous aviez déjà essayées)_  
+_Si la couleur de la case ne change pas, cela veut tout simplement dire que la lettre n'est pas dans le mot à trouver._  
+_(Pour ce cas précis, vous aurez un rappel des lettres non présentes dans le mot que vous avez déjà essayées)_  
 
 ## Développement
 Il s'agit d'un petit projet d'un autodidacte, ne vous attendez pas à du code ultra robuste et à un résultat très beau.  
@@ -36,6 +36,5 @@ Je reste le plus clair de mon temps sur **Discord** : Idotcom#2197
 Si vous voulez checker mon **Github** : [gtf974](https://github.com/gtf974)  
 
 
-
-__Si vous ouvrez l'outil de développeur de votre navigateur (**F12** ou **CTRL+MAJ+I**),__  
-__puis allez dans l'onglet console, vous trouverez peut-être des petits trucs... 🐰__  
+<sub><sup>__Si vous ouvrez l'outil de développeur de votre navigateur (**F12** ou **CTRL+MAJ+I**),__  
+__puis allez dans l'onglet console, vous trouverez peut-être des petits trucs... 🐰__</sup></sub>
