@@ -19,7 +19,7 @@ Pour valider votre réponse, appuyez sur **Entrée** ou cliquez sur le bouton bl
 _Si la couleur de la case ne change pas, cela veut tout simplement dire que la lettre n'est pas dans le mot à trouver._  
 _(Pour ce cas précis, vous aurez un rappel des lettres non présentes dans le mot que vous avez déjà essayées)_  
 
-## Développement
+## Développement 💻
 Il s'agit d'un petit projet d'un autodidacte, ne vous attendez pas à du code ultra robuste et à un résultat très beau.  
 Ça doit être bien rempli de bugs.  
 (Ce n'est même pas responsive 👀)  
@@ -28,10 +28,10 @@ Les mots sont choisis aléatoirement parmi une liste de mots hébergée sur [JSO
 
 **Merci à [Nmondon](https://github.com/nmondon) à qui j'ai emprunté la liste de mots fréquents via son Github [Mots fréquents de la langue française](https://github.com/nmondon/mots-frequents)**
 
-## Prérequis
+## Prérequis ✔️
 Vous aurez juste besoin de n'importe quel navigateur récent et de votre cerveau. 🧠
 
-## Contact
+## Contact ✉️
 Je reste le plus clair de mon temps sur **Discord** : Idotcom#2197  
 Si vous voulez checker mon **Github** : [gtf974](https://github.com/gtf974)  
 
