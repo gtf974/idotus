@@ -115,7 +115,7 @@ const getTheRandomWord = async () => {
         method: 'GET'
     }).then((res) => {
         res.json().then((data) => {
-            wordToGuess = data.words[Math.floor(Math.random() * 277)].toUpperCase();
+            wordToGuess = data.record.words[Math.floor(Math.random() * 277)].toUpperCase();
         });
     });
 }
