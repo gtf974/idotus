@@ -111,7 +111,7 @@ const showPopUp = () => {
 // return: None
 // def: gets a random words from a web hosted json and stores it into a wordToGuess
 const getTheRandomWord = async () => {
-    fetch("https://api.jsonbin.io/b/62019fa769b72261be53fc13", {
+    fetch("https://api.jsonbin.io/v3/b/62019fa769b72261be53fc13", {
         method: 'GET'
     }).then((res) => {
         res.json().then((data) => {
