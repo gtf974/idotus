@@ -319,7 +319,7 @@ const addWord = (input) => {
                     wordBoxes.forEach((word, i) => {
                         const allWordsArray = [...(word.children)];
                         for (let index = 0; index < allWordsArray.length; index++) {
-                            if(colors[index] && colors[index] == "red" && i == gameIndex+1){
+                            if(colors[index] && colors[index] == "red"){
                                 allWordsArray[index].textContent = input[index];
                                 allWordsArray[index].classList.add(colors[index]);
                             }
