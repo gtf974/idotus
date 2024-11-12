@@ -296,6 +296,7 @@ const addWord = (input) => {
     generateOccurences(); //L.273
     const wordBoxes = document.querySelectorAll(".word-box");
     wordBoxes.forEach((word) => {
+        const currentIndex = word.dataset.index;
         if(word.dataset.index == gameIndex){
             const wordArray = [...(word.children)];
             //-------------RED LETTERS LOOP-------------
@@ -317,7 +318,7 @@ const addWord = (input) => {
                 setTimeout(() => {
                     wordArray[index].textContent = input[index];
                     wordBoxes.forEach((word) => {
-                        if(word.dataset.index == gameIndex+1){
+                        if(word.dataset.index == currentIndex+1){
                             const allWordsArray = [...(word.children)];
                             for (let index2 = 0; index2 < allWordsArray.length; index2++) {                            
                                 if(colors[index2] && colors[index2] == "red"){
