@@ -237,12 +237,12 @@ const lossReset = () => {
 const loadingPage = () => {
     gameBox.innerHTML = `            
 <div data-index=1 class="word-box">  
-    <div class="letter">I</div>  
-    <div class="letter">D</div>  
+    <div class="red letter">I</div>  
+    <div class="red letter">D</div>  
     <div class="letter">O</div>  
-    <div class="letter">T</div>  
+    <div class="yellow letter">T</div>  
     <div class="letter">U</div>  
-    <div class="letter">S</div>
+    <div class="red letter">S</div>
 </div>
 <div class="result">
     Chargement...
@@ -296,7 +296,6 @@ const addWord = (input) => {
     generateOccurences(); //L.273
     const wordBoxes = document.querySelectorAll(".word-box");
     wordBoxes.forEach((word) => {
-        const currentIndex = word.dataset.index;
         if(word.dataset.index == gameIndex){
             const wordArray = [...(word.children)];
             //-------------RED LETTERS LOOP-------------
@@ -317,17 +316,6 @@ const addWord = (input) => {
             for (let index = 0; index < wordArray.length; index++) {
                 setTimeout(() => {
                     wordArray[index].textContent = input[index];
-                    wordBoxes.forEach((word) => {
-                        if(word.dataset.index == currentIndex+1){
-                            const allWordsArray = [...(word.children)];
-                            for (let index2 = 0; index2 < allWordsArray.length; index2++) {                            
-                                if(colors[index2] && colors[index2] == "red"){
-                                    allWordsArray[index2].textContent = input[index2];
-                                    allWordsArray[index2].classList.add(colors[index2]);
-                                }
-                            }
-                        }
-                    })
                     if(colors[index]) wordArray[index].classList.add(colors[index]);
                     if(!(wordToGuess.includes(input[index])) && !(wrongLetters.includes(input[index]))){
                         wrongLetters.push(input[index]);
