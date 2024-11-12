@@ -316,15 +316,13 @@ const addWord = (input) => {
             for (let index = 0; index < wordArray.length; index++) {
                 setTimeout(() => {
                     wordArray[index].textContent = input[index];
-                    wordBoxes.forEach((word) => {
+                    wordBoxes.forEach((word, i) => {
                         const allWordsArray = [...(word.children)];
-                        for (let index = 0; index < allWordsArray.length; index++) {
-                            setTimeout(() => {                                
-                                if(colors[index] && colors[index] == "red"){
-                                    allWordsArray[index].textContent = input[index];
-                                    allWordsArray[index].classList.add(colors[index]);
-                                }
-                            }, index*500);
+                        for (let index2 = 0; index2 < allWordsArray.length; index2++) {                            
+                            if(colors[index] && colors[index] == "red" && i > gameIndex){
+                                allWordsArray[index].textContent = input[index];
+                                allWordsArray[index].classList.add(colors[index]);
+                            }
                         }
                     })
                     if(colors[index]) wordArray[index].classList.add(colors[index]);
