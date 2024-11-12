@@ -316,10 +316,10 @@ const addWord = (input) => {
             for (let index = 0; index < wordArray.length; index++) {
                 setTimeout(() => {
                     wordArray[index].textContent = input[index];
-                    wordBoxes.forEach((word, i) => {
+                    wordBoxes.forEach((word) => {
                         const allWordsArray = [...(word.children)];
                         for (let index2 = 0; index2 < allWordsArray.length; index2++) {                            
-                            if(colors[index] && colors[index] == "red" && i > gameIndex){
+                            if(colors[index] && colors[index] == "red" && word.dataset.index > gameIndex){
                                 allWordsArray[index].textContent = input[index];
                                 allWordsArray[index].classList.add(colors[index]);
                             }
